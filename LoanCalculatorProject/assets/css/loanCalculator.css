@@ -1,0 +1,76 @@
+
+/*==================================Register New User - Page===================================*/
+
+
+
+/*Importing Roboto Font from Google Front.*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+
+    /* RedSunset -> linear gradient style*/
+    background: #355C7D; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/*----------------Navigation Bar--------------------*/
+
+.navbar
+{
+    box-sizing: border-box;
+    height:50px;
+    background-color: #149884;
+    border: 1px solid rgba(0,0,0,0);
+    text-transform: capitalize;
+}
+
+.navbar li:hover
+{
+    border: 1px solid #4c4c4c;
+    filter: blur(0.5px);
+    font-weight: bold;
+    margin:2px;
+}
+
+.navbar img
+{
+    width: 30px;
+    height: 30px;
+}
+
+
+.navbar-brand .fa-money-bill-wave:hover 
+{
+    color: #355C7D;
+}
+
+/*Loan Calculator Form*/
+#loanCalculatorForm
+{
+    background: white;
+    margin: 5rem;
+    color: black;
+    padding: 40px;
+}
+
+h1.page-title
+{
+    font-family:Roboto;
+    border-bottom: 1px solid #c99789;
+    box-shadow: 0px 5px 20px 5px #9739d;
+    text-transform: uppercase;
+    color: #4c4c4c;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.required-field
+{
+    color: #FF0000;
+}
