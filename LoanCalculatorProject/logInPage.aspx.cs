@@ -15,6 +15,15 @@ namespace LoanCalculatorProject
             labelSuccess.Visible = false;
         }
 
+        public void hideControls()
+        {
+            labelUserName.Visible = false;
+            labelPassword.Visible = false;
+            textUserName.Visible = false;
+            textPassword.Visible = false;
+            btnLogin.Visible = false;
+        }
+
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             if (textUserName.Text == "" || textPassword.Text == "")//Empty Field
@@ -38,8 +47,12 @@ namespace LoanCalculatorProject
                 {             
                     if(Session["userName"] != null)
                     {
+                        hideControls();
                         labelSuccess.Visible = true;
-                        labelSuccess.Text = "Hi, " + Session["userName"] + " Welcome Back!";
+                        labelSuccess.Text = "Hi, " + Session["userName"] + " Welcome Back!. Redirecting, Please Wait .....";
+
+                        //Using Javascript to redirect to homePage after 3 seconds. setTimeout executes a function after a specified time, here 3000=3sec.
+                        Response.Write("<script>setTimeout(function(){ window.location = 'homePage.aspx'; }, 3000)</script>");
                     }
                     else
                     {

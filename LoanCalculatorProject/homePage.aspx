@@ -8,6 +8,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="loanFormContent" runat="server">
+
     <asp:Button ID="bthLogin" class="btn btn-info btn-lg btn-block" runat="server" Text="Login Page" OnClick="bthLogin_Click" />
     <asp:Button ID="btnRegister" class="btn btn-info btn-lg btn-block" runat="server" Text="Register Page" OnClick="btnRegister_Click" />
     <br />

@@ -51,7 +51,7 @@
         </div>
         <ul class="navbar-nav">
         	<li class="nav-item">
-	                <a class="nav-link" href="loginPage.aspx">LogIn</a>
+                    <asp:HyperLink ID="linkToLogInOrOut" class="nav-link" runat="server" target="_self"></asp:HyperLink>
 	        </li>
 	        <li class="nav-item">
 	                <a class="nav-link" href="registerPage.aspx">Register</a>

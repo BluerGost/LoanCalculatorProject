@@ -10,16 +10,16 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="loanFormContent" runat="server">
     <!-- User Name -->
     <div class="form-group"> 
-        <label runat="server" for="textUserName">Username<span class="required-field">*</span></label>
+        <label id="labelUserName" runat="server" for="textUserName">Username<span class="required-field">*</span></label>
         <asp:TextBox runat="server" id="textUserName"   class="form-control" placeholder="Choose a Username"></asp:TextBox>
     </div>
 
     <!-- Password -->
     <div class="form-group">
-        <label runat="server" for="textPassword">Password<span class="required-field">*</span></label>
+        <label id="labelPassword" runat="server" for="textPassword">Password<span class="required-field">*</span></label>
         <asp:TextBox runat="server" id="textPassword"   type="password" class="form-control" placeholder="Enter Password"></asp:TextBox>
     </div>
-
+   
     <asp:Button ID="btnLogin" class="btn btn-primary" runat="server" Text="Login" OnClick="btnLogin_Click"/>
     <br />
     <br />

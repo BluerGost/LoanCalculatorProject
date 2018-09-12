@@ -13,6 +13,15 @@ namespace LoanCalculatorProject {
     public partial class WebForm5 {
         
         /// <summary>
+        /// labelUserName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl labelUserName;
+        
+        /// <summary>
         /// textUserName control.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,15 @@ namespace LoanCalculatorProject {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox textUserName;
+        
+        /// <summary>
+        /// labelPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl labelPassword;
         
         /// <summary>
         /// textPassword control.

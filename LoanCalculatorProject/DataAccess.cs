@@ -59,5 +59,21 @@ namespace LoanCalculatorProject
                 return false;
             }
         }
+
+        public bool logOutUser()
+        {
+            if(Session["userName"] != null  && Session["balance"] != null && Session["firstName"] != null && Session["lastName"] != null)
+            {
+                Session["userName"] = null;
+                Session["balance"] = null;
+                Session["firstName"] = null;
+                Session["lastName"] = null;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

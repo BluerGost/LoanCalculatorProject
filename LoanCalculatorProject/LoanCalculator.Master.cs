@@ -11,7 +11,16 @@ namespace LoanCalculatorProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["userName"] != null)//user logged in
+            {
+                linkToLogInOrOut.Text = "LogOut";
+                linkToLogInOrOut.NavigateUrl = "logOutPage.aspx";
+            }
+            else//user not logged in
+            {
+                linkToLogInOrOut.Text = "LogIn";
+                linkToLogInOrOut.NavigateUrl = "logInPage.aspx";
+            }
         }
     }
 }

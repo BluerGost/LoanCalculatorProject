@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\database\1 LoanCalculator Project - Database Queries.sql" />
+    <Content Include="logOutPage.aspx" />
     <Content Include="packages.config" />
     <Content Include="LoanCalculator.Master" />
     <Content Include="transferPage.aspx" />
@@ -104,6 +105,13 @@
     </Compile>
     <Compile Include="LoanCalculator.Master.designer.cs">
       <DependentUpon>LoanCalculator.Master</DependentUpon>
+    </Compile>
+    <Compile Include="logOutPage.aspx.cs">
+      <DependentUpon>logOutPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logOutPage.aspx.designer.cs">
+      <DependentUpon>logOutPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="depositPage.aspx.cs">
